@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fffdf5;
+    color: #222;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+/* =========================
+   HEADER
+========================= */
+.header {
+    height: 64px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid #eeeeee;
+}
+.logo {
+    width: 180px;
+    height: 40px;
+    color: #f5a623;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* =========================
+   HERO
+========================= */
+.hero {
+    width: 90%;
+    height: 230px;
+    margin: 25px auto;
+    border-radius: 4px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+    url("../assets/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+.hero-content {
+    max-width:700px;
+}
+.hero h1 {
+    font-size:28px;
+    line-height:1.25;
+    margin-bottom:12px;
+}
+.hero p {
+    font-size:13px;
+    margin-bottom:18px;
+}
+.hero button {
+    background:#38d353;
+    color:white;
+    border:none;
+    padding:10px 45px;
+    border-radius:5px;
+    font-size:12px;
+}
+/* =========================
+   COURSE SECTION
+========================= */
+.course-section {
+    width:90%;
+    margin:35px auto;
+}
+.course-section h2 {
+    font-size:18px;
+    margin-bottom:18px;
+}
+/* CATEGORY */
+.category-menu {
+    display:flex;
+    gap:18px;
+    margin-bottom:25px;
+}
+.category-menu button {
+    border:none;
+    background:transparent;
+    color:#555;
+    font-size:12px;
+    padding-bottom:8px;
+}
+.category-menu .active {
+    color:#ff7a00;
+    border-bottom:2px solid #ff7a00;
+}
+/* =========================
+   CARD COURSE
+========================= */
+.course-grid {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+.course-card {
+    background:white;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #eeeeee;
+    transition:.2s;
+}
+.course-card:hover {
+    transform:translateY(-3px);
+}
+.course-card img {
+    width:100%;
+    height:130px;
+    object-fit:cover;
+    border-radius:6px;
+}
+.course-card h3 {
+    font-size:13px;
+    margin-top:10px;
+    margin-bottom:6px;
+}
+.mentor {
+    font-size:11px;
+    color:#777;
+}
+.rating {
+    font-size:11px;
+    margin:7px 0;
+}
+.price {
+    font-size:12px;
+    font-weight:bold;
+    color:#19b84a;
+}
+/* =========================
+   NEWSLETTER
+========================= */
+.newsletter {
+    width:90%;
+    height:220px;
+    margin:60px auto;
+    border-radius:5px;
+    background:
+    linear-gradient(
+    rgba(0,0,0,.55),
+    rgba(0,0,0,.55)
+    ),
+    url("../assets/newsletter.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+.newsletter h2 {
+    font-size:22px;
+    margin-bottom:10px;
+}
+.newsletter p {
+    font-size:13px;
+    margin-bottom:20px;
+}
+.newsletter-form {
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+.newsletter input {
+    width:260px;
+    height:35px;
+    border:none;
+    padding:0 12px;
+    border-radius:5px;
+}
+.newsletter button {
+    background:#ff9f1c;
+    color:white;
+    border:none;
+    padding:0 25px;
+    border-radius:5px;
+}
+/*=========================
+   FOOTER
+========================= */
+.footer {
+    background:white;
+    padding:40px 80px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    gap:30px;
+}
+.footer h3 {
+    color:#f5a623;
+    margin-bottom:10px;
+}
+.footer h4 {
+    font-size:14px;
+    margin-bottom:12px;
+}
+.footer p {
+    font-size:12px;
+    color:#666;
+    margin-bottom:8px;
+}
+.copyright {
+    background:white;
+    border-top:1px solid #eee;
+    text-align:center;
+    padding:15px;
+    font-size:11px;
+    color:#777;
+}
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media(max-width:768px){
+.header {
+    padding:0 20px;
+}
+.navbar a {
+    display:none;
+}
+.hero {
+    height:230px;
+    width:92%;
+}
+.hero h1 {
+    font-size:20px;
+}
+.course-section {
+    width:92%;
+}
+.category-menu {
+    overflow-x:auto;
+}
+.course-grid {
+    grid-template-columns:1fr;
+}
+.course-card img {
+    height:180px;
+}
+.newsletter {
+    width:92%;
+}
+.newsletter-form {
+    flex-direction:column;
+}
+.newsletter input {
+    width:250px;
+}
+.footer {
+    padding:30px 25px;
+    grid-template-columns:1fr;
+}
+}
+/* =================================
+   LOGIN & REGISTER PAGE
+================================= */
+.login-page {
+    min-height: calc(100vh - 64px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fffdf5;
+}
+.login-card {
+    width:320px;
+    background:white;
+    border:1px solid #eeeeee;
+    padding:25px;
+}
+.login-card h1 {
+    text-align:center;
+    font-size:20px;
+    margin-bottom:8px;
+}
+.subtitle {
+    text-align:center;
+    color:#777;
+    font-size:11px;
+    margin-bottom:25px;
+}
+.login-card label {
+    display:block;
+    font-size:11px;
+    margin-bottom:6px;
+    color:#555;
+}
+.login-card label span {
+    color:red;
+}
+.login-card input,
+.login-card select {
+    width:100%;
+    height:32px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    padding:0 10px;
+    margin-bottom:15px;
+    font-size:12px;
+}
+.password-box {
+    position:relative;
+}
+.password-box input {
+    padding-right:35px;
+}
+.password-box button {
+    position:absolute;
+    right:5px;
+    top:0;
+    height:32px;
+    border:none;
+    background:none;
+}
+.forgot {
+    text-align:right;
+    margin-top:-8px;
+    margin-bottom:15px;
+}
+.forgot a {
+    font-size:10px;
+    color:#777;
+    text-decoration:none;
+}
+/* LOGIN BUTTON */
+.btn-login {
+    width:100%;
+    height:32px;
+    border:none;
+    border-radius:5px;
+    background:#38d353;
+    color:white;
+    font-size:12px;
+    margin-bottom:8px;
+}
+.btn-register {
+    width:100%;
+    height:32px;
+    border:none;
+    border-radius:5px;
+    background:#e4fbdc;
+    color:#32c94a;
+    font-size:12px;
+}
+/* DIVIDER */
+.divider {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:15px 0;
+    color:#777;
+    font-size:11px;
+}
+.divider span {
+    height:1px;
+    background:#ddd;
+    flex:1;
+}
+/* GOOGLE BUTTON */
+.google-btn {
+    width:100%;
+    height:32px;
+    border:1px solid #ddd;
+    background:white;
+    border-radius:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    font-size:12px;
+}
+.google-btn img {
+    width:14px;
+}
+/* REGISTER PHONE */
+.phone {
+    display:flex;
+    gap:10px;
+}
+.phone select {
+    width:70px;
+}
+.register-card {
+    width:330px;
+}
+@media(max-width:600px){
+.login-card,
+.register-card {
+    width:90%;
+}
+}
+/* =================================
+   FIX CENTER LOGIN & REGISTER
+================================= */
+.login-page {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+/* Card Login/Register */
+.login-card,
+.register-card {
+    margin: auto;
+}
+/* khusus register karena form lebih panjang */
+.register-card {
+    width: 330px;
+}
+/* Desktop */
+@media(min-width:769px){
+    .login-page {
+        min-height: calc(100vh - 64px);
+    }
+}
