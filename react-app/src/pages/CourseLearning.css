@@ -1,0 +1,93 @@
+
+.learning-container {
+  max-width: 1100px;
+  margin: 35px auto;
+  padding: 20px;
+  min-height: 70vh;
+}
+
+.learning-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #38ca50;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.learning-container h1 {
+  font-size: 27px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.learning-instructor {
+  color: #777;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.video-wrapper p {
+  color: white;
+  font-size: 15px;
+}
+
+.learning-material {
+  background: white;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+.learning-material h2 {
+  font-size: 21px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.learning-material h3 {
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.learning-material p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+  .learning-container {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .learning-container h1 {
+    font-size: 21px;
+  }
+
+  .learning-material {
+    padding: 18px;
+  }
+}
